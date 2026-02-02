@@ -1,0 +1,74 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.ProductInfo.EditProductModel
+@{
+
+    ViewData["Title"] = "Edit Product";
+}
+
+<h1>Edit Product</h1>
+
+@if (!string.IsNullOrEmpty(Model.errorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.errorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.successMessage))
+{
+    <div class="alert alert-success">
+        @Model.successMessage
+    </div>
+}
+
+<form method="post">
+    <input type="hidden" name="ID" value="@Model.Product.ID" />
+
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Product.Name" />
+    </div>
+    <div class="form-group">
+        <label for="Price">Price</label>
+        <input type="text" class="form-control" id="Price" name="Price" value="@Model.Product.Price" />
+    </div>
+    <div class="form-group">
+        <label for="Category">Category</label>
+        <select class="form-control" id="Category" name="Category">
+            @foreach (var category in Model.Categories)
+            {
+                @if (category == Model.Product.Category)
+                {
+                    <option value="@category" selected="selected">@category</option>
+                }
+                else
+                {
+                    <option value="@category">@category</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Availability">Availability</label>
+        <select class="form-control" id="Availability" name="Availability">
+            @foreach (var availability in Model.Availabilities)
+            {
+                @if (availability == Model.Product.Availability)
+                {
+                    <option value="@availability" selected="selected">@availability</option>
+                }
+                else
+                {
+                    <option value="@availability">@availability</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Description">Description</label>
+        <textarea class="form-control" id="Description" name="Description">@Model.Product.Description</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+
+<a asp-page="/ProductInfo/Products">Back to List</a>

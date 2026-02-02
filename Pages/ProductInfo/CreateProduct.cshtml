@@ -1,0 +1,72 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.ProductInfo.CreateProductModel
+@{
+}
+<h1>Add Product</h1>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @Model.ErrorMessage
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(Model.SuccessMessage))
+{
+    <div class="alert alert-success">
+        @Model.SuccessMessage
+    </div>
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="product.Name"></label>
+        <input asp-for="product.Name" class="form-control" />
+        <span asp-validation-for="product.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="product.Price"></label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">R</span>
+            </div>
+            <input asp-for="product.Price" class="form-control" />
+        </div>
+        <span asp-validation-for="product.Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="product.Category"></label>
+        <select asp-for="product.Category" class="form-control">
+            <option value="">-- Select Category --</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category">@category</option>
+            }
+        </select>
+        <span asp-validation-for="product.Category" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="product.Availability"></label>
+        <select asp-for="product.Availability" class="form-control">
+            <option value="">-- Select Availability --</option>
+            @foreach (var availability in Model.Availabilities)
+            {
+                <option value="@availability">@availability</option>
+            }
+        </select>
+        <span asp-validation-for="product.Availability" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="product.Description"></label>
+        <input asp-for="product.Description" class="form-control" />
+        <span asp-validation-for="product.Description" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<a asp-page="/ProductInfo/Products">Back to List</a>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\KhumaloCraftEmporium_ST10265272.props" />
+</Project>

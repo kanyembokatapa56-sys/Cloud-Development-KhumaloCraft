@@ -1,0 +1,52 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.ProductInfo.ProductsModel
+@{
+}
+
+<body>
+ 
+    <br />
+    <h2>Product Information</h2>
+    <a class='btn btn-primary' href='/ProductInfo/CreateProduct'> New Product</a>
+
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Availability</th>
+                <th>Price</th>
+                <th>Date Added</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            @foreach (var products in Model.listProducts)
+            {
+                <tr>
+                    <td>@products.ID</td>
+                    <td>@products.Name</td>
+                    <td>@products.Description</td>
+                    <td>@products.Category</td>
+                    <td>@products.Availability</td>
+                    <td>R @products.Price</td>
+                    <td>@products.CreatedOn</td>
+
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/ProductInfo/EditProduct?id=@products.ID">Edit</a>
+                     </td>
+
+                     <td>
+                        <a class="btn btn-primary btn-sm" href="/ProductInfo/DeleteProduct?id=@products.ID">Delete</a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class='btn btn-primary' href='/OrderBackEnd/OrderStatus'> View Orders</a>
+</body>

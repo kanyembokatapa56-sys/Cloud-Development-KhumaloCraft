@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = KhumaloCraftEmporium_ST10265272
+build_property.RootNamespace = KhumaloCraftEmporium_ST10265272
+build_property.ProjectDir = C:\Users\kanye\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\kanye\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/AddCart/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2FydFxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/AddCart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/AddCart/OrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2FydFxPcmRlckhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Login/LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9naW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Login/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/MyWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlXb3JrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/MyWork2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlXb3JrMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/OrderBackEnd/OrderStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJCYWNrRW5kXE9yZGVyU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/ProductInfo/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdEluZm9cQ3JlYXRlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/ProductInfo/DeleteProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdEluZm9cRGVsZXRlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/ProductInfo/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdEluZm9cRWRpdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/ProductInfo/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdEluZm9cUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kanye/OneDrive - ADvTECH Ltd/KhumaloCraftEmporium_ST10265272/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-08n5jckm9e

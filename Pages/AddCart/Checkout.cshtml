@@ -1,0 +1,47 @@
+﻿@page 
+@model KhumaloCraftEmporium_ST10265272.Pages.Cart.CheckoutModel
+@{
+    ViewData["Title"] = "Invoice";
+}
+
+<h1>Invoice</h1>
+
+@if (Model.InvoiceItems.Count == 0)
+{
+    <p>Your invoice is empty.</p>
+}
+else
+{
+    <p>User: @Model.UserName</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.InvoiceItems)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Description</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.TotalPrice.ToString("C")</td>
+                </tr>
+            }
+            <tr>
+                <td colspan="3"><strong>Overall Total:</strong></td>
+                <td>@Model.OverallTotal.ToString("C")</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form method="post" asp-page-handler="DownloadInvoice">
+        <input type="hidden" name="customerId" value="@Model.RouteData.Values["customerId"]" />
+        <button type="submit" class="btn btn-primary">Download Invoice</button>
+        <a class= "btn btn-success" href = "/MyWork2" > Back </a >
+    </form>
+}

@@ -1,0 +1,60 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.Cart.CartModel
+@{
+}
+
+<h1>Shopping Cart</h1>
+
+@if (Model.CartItems.Count == 0)
+{
+    <p>Your cart is empty.</p>
+    <a class="cartbutton" href="/AddCart/OrderHistory">Order History</a>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th> 
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Description</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.TotalPrice.ToString("C")</td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" /> 
+                            <button type="submit" name="remove" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="4"><strong>Overall Total:</strong></td>
+                <td>@Model.OverallTotal.ToString("C")</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="text-align: right;">
+        <form method="post" asp-page-handler="Checkout" style="display: inline;">
+            <button type="submit" class="btn" style="background-color: green; color: white; width:auto; height: 50px; white-space: normal;">Proceed to Checkout</button>
+        </form>
+    </div>
+
+    <div style="text-align: left;">
+        <a href="/AddCart/OrderHistory" class="button">Order History</a>
+        <a href="/MyWork2" class="button">Back</a>
+        </div>
+    
+}
+

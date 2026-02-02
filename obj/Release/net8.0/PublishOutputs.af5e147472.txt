@@ -1,0 +1,7 @@
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\KhumaloCraftEmporium_ST10265272.exe
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\KhumaloCraftEmporium_ST10265272.dll
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\KhumaloCraftEmporium_ST10265272.deps.json
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\KhumaloCraftEmporium_ST10265272.runtimeconfig.json
+C:\Users\lab_services_student\OneDrive - ADvTECH Ltd\KhumaloCraftEmporium_ST10265272\obj\Release\net8.0\PubTmp\Out\KhumaloCraftEmporium_ST10265272.pdb

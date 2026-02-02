@@ -1,0 +1,69 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.OrderBackEnd.OrderStatusModel
+@{
+}
+
+<h1>Customer Orders</h1>
+
+
+@if (Model.OrderHistoryItems.Count == 0)
+{
+    <p>You have no Orders.</p>
+}
+else{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Date of Purchase</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderHistoryItems)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.TotalPrice.ToString("C")</td>
+                    <td><span class="order-date"></span></td>
+                    <td>
+                        <select class="status-dropdown">
+                            <option value="dispatched">--Select--</option>
+                            <option value="dispatched">Dispatched</option>
+                            <option value="delivered">Delivered</option>
+                        </select>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a class='btn btn-primary' href='/ProductInfo/Products'> Back</a>
+
+}
+
+   
+
+<script>
+    var currentDate = new Date();
+    var formattedDate = currentDate.toISOString().split('T')[0];
+    var orderDateElements = document.getElementsByClassName("order-date");
+    for (var i = 0; i < orderDateElements.length; i++) {
+        orderDateElements[i].textContent = formattedDate;
+    }
+
+    // Add event listeners to each dropdown
+    var dropdowns = document.getElementsByClassName("status-dropdown");
+    for (var i = 0; i < dropdowns.length; i++) {
+        dropdowns[i].addEventListener("change", function () {
+            var status = this.value;
+            // Here you can perform further actions based on the selected status
+            console.log("Status changed to: " + status);
+        });
+    }
+</script>
+
+ 

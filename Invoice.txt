@@ -1,0 +1,6 @@
+User: Kanyembo Katapa
+
+Product	Description	Quantity	Total Price
+J.Khumalo Drum Set	Carved from sustainable solid African cedar wood, the Atlas Djembe is an impressive and loud instrument.	3	R4 500,00
+
+Overall Total: R4 500,00

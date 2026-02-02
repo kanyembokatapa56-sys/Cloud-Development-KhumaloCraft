@@ -1,0 +1,295 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 90px;
+}
+
+#hero {
+    background-image: url('../img/ready_sitting_room_ashanti_kente_2 (1).jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    color: white;
+    top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+html, body, form {
+    height: 100%;
+ 
+}
+
+#hero::after{
+    background-color: black;
+    opacity: .7;
+}
+
+
+.container {
+    width: 80%;
+    margin: 5px auto;
+}
+
+.contact-box{
+    background: #fff;
+    display:flex;
+
+}
+.contact-left{
+    flex-basis:60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.input-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+
+}
+input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+    outline:none;
+    padding-bottom:5px;
+
+}
+
+textarea{
+    width:100%;
+    border:1px solid #ccc;
+    outline: none;
+    padding: 10px;
+
+}
+
+button{
+    background: black;
+    width:100px;
+    height: 35px;
+    border:none;
+    outline:none;
+    color:#fff;
+    border-radius:30px;
+    margin-top:20px;
+}
+
+tr td:first-child{
+    padding-right:20px;
+
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.section {
+    width:100%;
+    min-height:130vh;
+}
+
+.about-container {
+    width: 80%;
+    margin: auto;
+    display:block;
+    padding-top:50px;
+}
+
+.content-section {
+    float:left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+        width: 30vw;
+        height: 50vh;
+        box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.4);
+}
+
+.content {
+    text-align: left;
+}
+
+.content-section .title{
+    font-size:28px;
+
+}
+
+.content-size .content p{
+    margin-top:20px;
+    line-height:1.5;
+}
+
+.section-title{
+    font-size:4rem;
+    font-weight:300;
+    margin-bottom:10px;
+    text-transform:uppercase;
+    letter-spacing: .2rem;
+    text-align:center;
+}
+
+.section-title span{
+    color:gray;
+}
+
+#work .work {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+}
+
+#work .work-header{
+    margin-bottom:50px;
+}
+
+#work .all-work{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+
+}
+
+#work .work-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:80%;
+    margin:20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+
+
+}
+
+#work .work-info{
+
+    padding:30px;
+    flex-basis:50%;
+    background-color: white;
+    height:100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction:column;
+    background-color: black;
+    color:white;
+
+}
+
+#work .work-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+
+}
+
+#work .work-info h2{
+    font-size:1.8rem;
+    font-weight:500;
+    margin-top:10px;
+}
+
+#work:hover .work-img img{
+transform:scale(1.1);
+}
+
+#work:hover .work-img img {
+    transition: .3s ease transform;
+}
+
+#work .work-img img {
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.4);
+}
+
+#work .buy {
+    background: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: black;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+#Footer {
+    position: absolute;
+    bottom: 0px;
+    height: 3px;
+    background-color: #666;
+    color: #eee;
+}
+
+.cart-icon {
+    font-size: 40px;
+    position: absolute;
+ 
+}
+
+.cartbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

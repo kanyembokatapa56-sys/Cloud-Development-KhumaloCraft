@@ -1,0 +1,48 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.Cart.OrderHistoryModel
+@{
+    ViewData["Title"] = "Order History";
+}
+
+<h1>Order History</h1>
+
+@if (Model.OrderHistoryItems.Count == 0)
+{
+    <p>You have no order history.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Date of Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderHistoryItems)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.TotalPrice.ToString("C")</td>
+                    <td><span class="order-date"></span></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<script>
+
+    var currentDate = new Date();
+   
+    var formattedDate = currentDate.toISOString().split('T')[0];
+
+    var orderDateElements = document.getElementsByClassName("order-date");
+    for (var i = 0; i < orderDateElements.length; i++) {
+        orderDateElements[i].textContent = formattedDate;
+    }
+</script>

@@ -1,0 +1,58 @@
+﻿@page
+@model KhumaloCraftEmporium_ST10265272.Pages.MyWork2Model
+@{
+}
+
+
+<section id="work">
+    <div class="work-container">
+        <div class="work-header">
+            <h1 class="section-title">KhumaloCraft Originals</h1>
+        </div>
+        <div class="all-work">
+            @foreach (var product in Model.listProducts)
+            {
+                <div class="work-item">
+                    <div class="work-info">
+                        <h1>@product.Name</h1>
+                        <h2>Price: R @product.Price</h2>
+                        <p>@product.Description</p>
+                        <form method="post" asp-page-handler="AddToCart">
+                            <input type="hidden" name="productId" value="@product.ProductID" />
+                            <input type="hidden" name="unitPrice" value="@product.Price" />
+                            <p>Quantity</p>
+                            <input type="number" name="quantity" value="1" min="1" />
+                            <button type="submit" class="btn btn-primary buy"> + Cart</button>
+                        </form>
+                    </div>
+                    <div class="work-img">
+                        @if (product.Name == "African Salad Bowl")
+                        {
+                            <center><img src="~/img/african-pottery-salad-bowl.jpg" width="320" height="330" /></center>
+                        }
+                        else if (product.Name == "Phumelele Lisa")
+                        {
+                            <center><img src="~/img/mona-lisa.jpg" width="320" height="360" /></center>
+                        }
+                        else if (product.Name == "Wire-made Crafts")
+                        {
+                            <center><img src="~/img/beadwork_wire_art_and_crafts_(23).jpg" width="320" height="325" /></center>
+                        }
+                        else if (product.Name == "J.Khumalo Drum Set")
+                        {
+                            <center><img src="~/img/seven-piece-african-drum-set.jpg" width="330" height="350" /></center>
+                        }
+                        else if (product.Name == "Oppression of the Piercer")
+                        {
+                            <center><img src="~/img/zuma.jpg" width="350" height="350" /></center>
+                        }
+                        else if (product.Name == "Physical Repeller")
+                        {
+                            <center><img src="~/img/f9g1po2agaaynj4.jpg" width="350" height="360" /></center>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
