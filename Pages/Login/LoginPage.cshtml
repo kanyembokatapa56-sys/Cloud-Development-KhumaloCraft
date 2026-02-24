@@ -1,26 +1,43 @@
 ﻿@page
 @model KhumaloCraftEmporium_ST10265272.Pages.Login.LoginPageModel
 @{
-}
-<h2>Login</h2>
-
-@if (!string.IsNullOrEmpty(Model.ErrorMessage))
-{
-    <div class="alert alert-danger">
-        @Model.ErrorMessage
-    </div>
+    ViewData["Title"] = "Login";
+    ViewData["BodyClass"] = "auth";
 }
 
-<form method="post">
-    <div class="form-group">
-        <label for="Email">Email</label>
-        <input type="email" class="form-control" id="Email" name="Email" required />
+<section class="auth-wrap">
+    <div class="auth-card">
+        <div class="auth-header">
+            <h1 class="auth-title">Welcome back</h1>
+            <p class="auth-subtitle">Log in to continue shopping and manage your account.</p>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger mb-3" role="alert">
+                @Model.ErrorMessage
+            </div>
+        }
+
+        <form method="post" class="auth-form">
+            <div class="mb-3">
+                <label for="Email" class="form-label auth-label">Email</label>
+                <input type="email" class="form-control auth-input" id="Email" name="Email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="mb-2">
+                <label for="Password" class="form-label auth-label">Password</label>
+                <input type="password" class="form-control auth-input" id="Password" name="Password" placeholder="••••••••" required />
+            </div>
+
+            <div class="auth-actions">
+                <button type="submit" class="btn kc-btn kc-btn-primary auth-submit">Login</button>
+                <a class="auth-link" asp-page="/Login/SignUp">Create an account</a>
+            </div>
+
+            @* DEV ONLY (remove before submission/demo)
+               Admin login: admin@khumalocraftempo.co.za / Abmnormalize2000
+            *@
+        </form>
     </div>
-    <div class="form-group">
-        <label for="Password">Password</label>
-        <input type="password" class="form-control" id="Password" name="Password" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
-<br/>
-<p>Admin login: admin@khumalocraftempo.co.za  Password:Abmnormalize2000 </p>
+</section>

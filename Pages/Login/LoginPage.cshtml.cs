@@ -23,7 +23,7 @@ namespace KhumaloCraftEmporium_ST10265272.Pages.Login
 
             try
             {
-                string connectionString = "Server=tcp:superserver9000.database.windows.net,1433;Initial Catalog=KHUMALO_STORE_INFO;Persist Security Info=False;User ID=superserver9000_admin;Password=@OddJobs2003;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                string connectionString = "Server=DESKTOP-31QPGQF\\SQLEXPRESS01;Database=KhumaloCraft_DB;Integrated Security=True;TrustServerCertificate=True;";
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();

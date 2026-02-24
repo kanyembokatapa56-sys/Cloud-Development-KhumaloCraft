@@ -1,28 +1,42 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
+    ViewData["BodyClass"] = "home";
 }
 
 
-<body>
-    
-    <section id="hero">
-        <div class= "hero container">
-            <div>
-                <h4>Welcome to <b><i>Khumalo Craft Emporium</i></b></h4>
-                <h2>Uniting our community of crafting connoisseurs</h2>
-                <h1>Purchase arts and crafts products</h1>
-                <a href="/MyWork2">
-                <button> Shop now</button>
-                </a>
-            </div>
+<section class="hero">
+    <div class="hero__overlay"></div>
 
+    <div class="hero__content container">
+        <p class="hero__eyebrow">Welcome to <span>KhumaloCraft Emporium</span></p>
+
+        <h1 class="hero__title">Handcrafted pieces with a story.</h1>
+        <p class="hero__subtitle">
+            Discover curated artisan goods—from décor to gifts—crafted with care and delivered to your door.
+        </p>
+
+        <div class="hero__actions">
+            <a class="btn-primary" href="/MyWork2">Shop now</a>
+            <a class="btn-secondary" href="/AboutUs">Learn more</a>
         </div>
-       
-        
-    </section>
 
-</body>
+        <div class="hero__stats">
+            <div class="stat">
+                <div class="stat__value">Ethically sourced</div>
+                <div class="stat__label">Crafted responsibly</div>
+            </div>
+            <div class="stat">
+                <div class="stat__value">Artisan-made</div>
+                <div class="stat__label">Unique, curated items</div>
+            </div>
+            <div class="stat">
+                <div class="stat__value">Secure checkout</div>
+                <div class="stat__label">Safe payments</div>
+            </div>
+        </div>
+    </div>
+</section>
 
 

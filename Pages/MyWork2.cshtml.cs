@@ -8,12 +8,12 @@ namespace KhumaloCraftEmporium_ST10265272.Pages
     {
         public List<Product> listProducts = new List<Product>();
 
-        private readonly string connectionString = "Server=tcp:superserver9000.database.windows.net,1433;Initial Catalog=KHUMALO_STORE_INFO;Persist Security Info=False;User ID=superserver9000_admin;Password=@OddJobs2003;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private readonly string connectionString = "Server=DESKTOP-31QPGQF\\SQLEXPRESS01;Database=KhumaloCraft_DB;Integrated Security=True;TrustServerCertificate=True;";
 
         public void OnGet()
         {
             // Load products from the database
-            string query = "SELECT ProductID, Name, Price, Description FROM ProductInfo";
+            string query = "SELECT ProductID, Name, Price, Description FROM Product";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

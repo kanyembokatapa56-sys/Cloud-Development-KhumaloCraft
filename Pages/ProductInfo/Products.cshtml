@@ -1,52 +1,104 @@
 ﻿@page
 @model KhumaloCraftEmporium_ST10265272.Pages.ProductInfo.ProductsModel
 @{
+    ViewData["Title"] = "Product Information";
+    ViewData["BodyClass"] = "admin-page";
 }
 
-<body>
- 
-    <br />
-    <h2>Product Information</h2>
-    <a class='btn btn-primary' href='/ProductInfo/CreateProduct'> New Product</a>
 
-    <table class="table">
+<section class="kc-section">
+    <div class="container">
+        <div class="kc-pagebar">
+            <div>
+                <h1 class="kc-h1">Product Information</h1>
+                <p class="kc-subtitle">Manage products, pricing, availability and categories.</p>
+            </div>
 
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Category</th>
-                <th>Availability</th>
-                <th>Price</th>
-                <th>Date Added</th>
-            </tr>
+            <div class="kc-actions">
+                <a class="btn kc-btn kc-btn-primary" href="/ProductInfo/CreateProduct">
+                    <i class="fas fa-plus me-2"></i> New Product
+                </a>
+                <a class="btn kc-btn kc-btn-secondary" href="/OrderBackEnd/OrderStatus">
+                    <i class="fas fa-receipt me-2"></i> View Orders
+                </a>
+            </div>
+        </div>
 
-        </thead>
-        <tbody>
+        <div class="kc-card">
+            <div class="kc-cardhead">
+                <div class="kc-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="productSearch" placeholder="Search products..." onkeyup="filterProducts()" />
+                </div>
 
-            @foreach (var products in Model.listProducts)
-            {
-                <tr>
-                    <td>@products.ID</td>
-                    <td>@products.Name</td>
-                    <td>@products.Description</td>
-                    <td>@products.Category</td>
-                    <td>@products.Availability</td>
-                    <td>R @products.Price</td>
-                    <td>@products.CreatedOn</td>
+                <div class="kc-muted small">
+                    Total: <strong>@Model.listProducts.Count</strong>
+                </div>
+            </div>
 
-                    <td>
-                        <a class="btn btn-primary btn-sm" href="/ProductInfo/EditProduct?id=@products.ID">Edit</a>
-                     </td>
+            <div class="table-responsive kc-tablewrap">
+                <table class="table kc-table" id="productsTable">
+                    <thead>
+                        <tr>
+                            <th style="width:70px;">ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Availability</th>
+                            <th style="width:120px;">Price</th>
+                            <th style="width:170px;">Date Added</th>
+                            <th style="width:170px;" class="text-end">Actions</th>
+                        </tr>
+                    </thead>
 
-                     <td>
-                        <a class="btn btn-primary btn-sm" href="/ProductInfo/DeleteProduct?id=@products.ID">Delete</a>
-                    </td>
+                    <tbody>
+                        @foreach (var products in Model.listProducts)
+                        {
+                            <tr>
+                                <td class="kc-id">@products.ID</td>
+                                <td class="kc-strong">@products.Name</td>
+                                <td class="kc-desc">@products.Description</td>
+                                <td>
+                                    <span class="kc-pill">@products.Category</span>
+                                </td>
+                                <td>
+                                    <span class="kc-status @(products.Availability?.ToLower().Contains("in") == true ? "is-in" : "is-out")">
+                                        @products.Availability
+                                    </span>
+                                </td>
+                                <td class="kc-price">R @products.Price</td>
+                                <td class="kc-date">@products.CreatedOn</td>
+                                <td class="text-end">
+                                    <a class="btn kc-btn kc-btn-outline kc-btn-sm" href="/ProductInfo/EditProduct?id=@products.ID">
+                                        <i class="fas fa-pen me-1"></i> Edit
+                                    </a>
+                                    <a class="btn kc-btn kc-btn-danger kc-btn-sm" href="/ProductInfo/DeleteProduct?id=@products.ID">
+                                        <i class="fas fa-trash me-1"></i> Delete
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
 
-                </tr>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        function filterProducts() {
+            const input = document.getElementById("productSearch");
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById("productsTable");
+            const rows = table.getElementsByTagName("tr");
+
+            // start at 1 to skip the header row
+            for (let i = 1; i < rows.length; i++) {
+                const rowText = rows[i].innerText.toLowerCase();
+                rows[i].style.display = rowText.includes(filter) ? "" : "none";
             }
-        </tbody>
-    </table>
-    <a class='btn btn-primary' href='/OrderBackEnd/OrderStatus'> View Orders</a>
-</body>
+        }
+    </script>
+}
