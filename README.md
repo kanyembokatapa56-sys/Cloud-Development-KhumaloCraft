@@ -1,4 +1,4 @@
-🛍 KhumaloCraft Emporium
+KhumaloCraft Emporium
 
 ASP.NET Core Razor Pages E-Commerce Management System
 
