@@ -1,10 +1,12 @@
 KhumaloCraft Emporium
 
+
 ASP.NET Core Razor Pages E-Commerce Management System
 
 KhumaloCraft Emporium is a web-based product and order management system built using ASP.NET Core Razor Pages and SQL Server.
 
 The application simulates a handcrafted goods marketplace with a fully functional admin backend for managing products, pricing, availability, and orders.
+
 
 1. Key Features
 
@@ -24,6 +26,7 @@ Sticky footer layout using Flexbox
 
 Clean, scoped CSS architecture to prevent global conflicts
 
+
 2. Tech Stack
 
 ASP.NET Core Razor Pages
@@ -38,6 +41,7 @@ Bootstrap 5
 
 Custom CSS architecture
 
+
 3. What This Project Demonstrates
 
 Backend–database integration
@@ -51,6 +55,7 @@ Responsive design principles
 Modern admin interface design
 
 Practical CRUD implementation in a real-world scenario
+
 
 4. Purpose
 
