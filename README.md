@@ -24,7 +24,7 @@ Sticky footer layout using Flexbox
 
 Clean, scoped CSS architecture to prevent global conflicts
 
-🛠 Tech Stack
+2. Tech Stack
 
 ASP.NET Core Razor Pages
 
@@ -38,7 +38,7 @@ Bootstrap 5
 
 Custom CSS architecture
 
-2.  What This Project Demonstrates
+3. What This Project Demonstrates
 
 Backend–database integration
 
@@ -52,6 +52,6 @@ Modern admin interface design
 
 Practical CRUD implementation in a real-world scenario
 
-3. Purpose
+4. Purpose
 
 This project was developed to demonstrate full-stack development capability using Microsoft technologies, with a focus on clean UI implementation and structured backend logic.
