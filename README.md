@@ -30,7 +30,7 @@ The system allows administrators to:
 * Categorize items
 * View and manage orders
 
-
+![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/4e45b95d89581d6ce9db19c8d7b6e42cc30b3939/Product%20Backend.png)
 
 The goal of the project was to implement real-world CRUD operations, integrate a relational database, and build a clean and responsive admin interface.
 
