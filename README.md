@@ -30,6 +30,7 @@ The system allows administrators to:
 * Track product availability
 * Categorize items
 * View and manage orders
+  
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/15f0d093bc9585ec10e46d2c7a45832e3c6f6e9f/Admin%20Login.png)
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/4e45b95d89581d6ce9db19c8d7b6e42cc30b3939/Product%20Backend.png)
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/dbb97beaeb497ad7642e763c3fda8758a83ebf7b/Add%20Product.png)
