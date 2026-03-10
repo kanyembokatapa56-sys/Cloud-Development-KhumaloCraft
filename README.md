@@ -1,6 +1,7 @@
 **KhumaloCraft Emporium**
 
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/aa2d7fa06e994841a73c8b09b8f7803aaeb988af/Home%20Page.png)
+![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/1edd8c1cc4fe6582f71f32c7a19b63b760ef23f9/About%20Us.png)
 
 **ASP.NET Core Razor Pages E-Commerce Management System**
 
