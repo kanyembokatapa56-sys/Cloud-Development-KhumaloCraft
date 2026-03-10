@@ -209,7 +209,7 @@ This structure keeps UI and business logic cleanly separated.
 
 
 
-Database Design
+**Database Design**
 
 
 
@@ -217,9 +217,9 @@ The project uses SQL Server with tables designed to support product management.
 
 
 
-Product Table
+**Product Table**
 
-Cart Table
+**Cart Table**
 
 
 
@@ -314,9 +314,13 @@ This project demonstrates several important full-stack development skills:
 
 
 * Separation of concerns
-* 
+
+
+
 * Organized project structure
-* 
+
+
+
 * Maintainable codebase
 
 
