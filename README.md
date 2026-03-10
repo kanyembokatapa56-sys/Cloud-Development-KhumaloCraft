@@ -1,5 +1,7 @@
 **KhumaloCraft Emporium**
 
+![image alt](<img width="1902" height="910" alt="image" src="https://github.com/user-attachments/assets/ca50be16-3162-410c-8d07-11e183d74e31" />)
+
 ASP.NET Core Razor Pages E-Commerce Management System
 
 
