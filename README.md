@@ -10,6 +10,7 @@ KhumaloCraft Emporium is a web-based e-commerce management system developed usin
 This project was built to demonstrate full-stack development using Microsoft technologies, focusing on clean architecture, database integration, and modern UI design.
 
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/242bba8d91710b76b0fb01845471400bfb5413de/My%20Work%201.png)
+![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/fb42d58c9219d3f281581f8abead86f18fbea213/My%20Work%202.png)
 
 **Project Overview**
 
