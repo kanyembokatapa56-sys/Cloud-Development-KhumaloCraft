@@ -1,72 +1,103 @@
 ﻿@page
 @model KhumaloCraftEmporium_ST10265272.Pages.ProductInfo.CreateProductModel
 @{
-}
-<h1>Add Product</h1>
-
-@if (!string.IsNullOrEmpty(Model.ErrorMessage))
-{
-    <div class="alert alert-danger">
-        @Model.ErrorMessage
-    </div>
+    ViewData["Title"] = "Add Product";
+    ViewData["BodyClass"] = "admin-page";
 }
 
-@if (!string.IsNullOrEmpty(Model.SuccessMessage))
-{
-    <div class="alert alert-success">
-        @Model.SuccessMessage
-    </div>
-}
+<section class="kc-section">
+    <div class="container">
 
-<form method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <label asp-for="product.Name"></label>
-        <input asp-for="product.Name" class="form-control" />
-        <span asp-validation-for="product.Name" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="product.Price"></label>
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text">R</span>
+        <div class="kc-pagebar">
+            <div>
+                <h1 class="kc-h1">Add Product</h1>
+                <p class="kc-subtitle">Create a new product with pricing, category and availability.</p>
             </div>
-            <input asp-for="product.Price" class="form-control" />
+
+            <div class="kc-actions">
+                <a class="btn kc-btn kc-btn-outline" asp-page="/ProductInfo/Products">
+                    <i class="fas fa-arrow-left me-2"></i> Back to Products
+                </a>
+            </div>
         </div>
-        <span asp-validation-for="product.Price" class="text-danger"></span>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @Model.ErrorMessage
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+        {
+            <div class="alert alert-success">
+                @Model.SuccessMessage
+            </div>
+        }
+
+        <div class="kc-card kc-formcard">
+            <form method="post" enctype="multipart/form-data" class="kc-form">
+
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label asp-for="product.Name" class="form-label kc-label"></label>
+                        <input asp-for="product.Name" class="form-control kc-input" placeholder="e.g. African Salad Bowl" />
+                        <span asp-validation-for="product.Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="product.Price" class="form-label kc-label"></label>
+                        <div class="input-group">
+                            <span class="input-group-text kc-inputprefix">R</span>
+                            <input asp-for="product.Price" class="form-control kc-input" placeholder="0.00" />
+                        </div>
+                        <span asp-validation-for="product.Price" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="product.Category" class="form-label kc-label"></label>
+                        <select asp-for="product.Category" class="form-select kc-input">
+                            <option value="">-- Select Category --</option>
+                            @foreach (var category in Model.Categories)
+                            {
+                                <option value="@category">@category</option>
+                            }
+                        </select>
+                        <span asp-validation-for="product.Category" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label asp-for="product.Availability" class="form-label kc-label"></label>
+                        <select asp-for="product.Availability" class="form-select kc-input">
+                            <option value="">-- Select Availability --</option>
+                            @foreach (var availability in Model.Availabilities)
+                            {
+                                <option value="@availability">@availability</option>
+                            }
+                        </select>
+                        <span asp-validation-for="product.Availability" class="text-danger small"></span>
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="product.Description" class="form-label kc-label"></label>
+                        <textarea asp-for="product.Description" class="form-control kc-input" rows="4"
+                                  placeholder="Short product description..."></textarea>
+                        <span asp-validation-for="product.Description" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="kc-formactions">
+                    <button type="submit" class="btn kc-btn kc-btn-primary">
+                        <i class="fas fa-check me-2"></i> Create Product
+                    </button>
+
+                    <a class="btn kc-btn kc-btn-outline" asp-page="/ProductInfo/Products">
+                        Cancel
+                    </a>
+                </div>
+
+            </form>
+        </div>
+
     </div>
-
-    <div class="form-group">
-        <label asp-for="product.Category"></label>
-        <select asp-for="product.Category" class="form-control">
-            <option value="">-- Select Category --</option>
-            @foreach (var category in Model.Categories)
-            {
-                <option value="@category">@category</option>
-            }
-        </select>
-        <span asp-validation-for="product.Category" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="product.Availability"></label>
-        <select asp-for="product.Availability" class="form-control">
-            <option value="">-- Select Availability --</option>
-            @foreach (var availability in Model.Availabilities)
-            {
-                <option value="@availability">@availability</option>
-            }
-        </select>
-        <span asp-validation-for="product.Availability" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="product.Description"></label>
-        <input asp-for="product.Description" class="form-control" />
-        <span asp-validation-for="product.Description" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Create</button>
-</form>
-
-<a asp-page="/ProductInfo/Products">Back to List</a>
+</section>

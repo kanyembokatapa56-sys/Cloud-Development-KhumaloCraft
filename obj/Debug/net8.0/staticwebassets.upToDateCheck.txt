@@ -43,7 +43,6 @@ C:\Users\user\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bo
 C:\Users\user\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js
 C:\Users\user\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map
 wwwroot\css\sidebar-style.css
-wwwroot\css\site.css
 wwwroot\css\Styles.css
 wwwroot\favicon.ico
 wwwroot\img\71Lp7moGVJL._AC_UF894,1000_QL80_.jpg
@@ -160,3 +159,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\site.css

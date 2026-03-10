@@ -1,74 +1,99 @@
 ﻿@page
 @model KhumaloCraftEmporium_ST10265272.Pages.ProductInfo.EditProductModel
 @{
-
     ViewData["Title"] = "Edit Product";
+    ViewData["BodyClass"] = "admin-page";
 }
 
-<h1>Edit Product</h1>
+<section class="kc-section">
+    <div class="container">
+        <div class="kc-pagebar">
+            <div>
+                <h1 class="kc-h1">Edit Product</h1>
+                <p class="kc-subtitle">Update product details, pricing, category and availability.</p>
+            </div>
 
-@if (!string.IsNullOrEmpty(Model.errorMessage))
-{
-    <div class="alert alert-danger">
-        @Model.errorMessage
-    </div>
-}
+            <div class="kc-actions">
+                <a class="btn kc-btn kc-btn-outline" asp-page="/ProductInfo/Products">
+                    <i class="fas fa-arrow-left me-2"></i> Back to List
+                </a>
+            </div>
+        </div>
 
-@if (!string.IsNullOrEmpty(Model.successMessage))
-{
-    <div class="alert alert-success">
-        @Model.successMessage
-    </div>
-}
+        @if (!string.IsNullOrEmpty(Model.errorMessage))
+        {
+            <div class="alert alert-danger">@Model.errorMessage</div>
+        }
 
-<form method="post">
-    <input type="hidden" name="ID" value="@Model.Product.ID" />
+        @if (!string.IsNullOrEmpty(Model.successMessage))
+        {
+            <div class="alert alert-success">@Model.successMessage</div>
+        }
 
-    <div class="form-group">
-        <label for="Name">Name</label>
-        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Product.Name" />
-    </div>
-    <div class="form-group">
-        <label for="Price">Price</label>
-        <input type="text" class="form-control" id="Price" name="Price" value="@Model.Product.Price" />
-    </div>
-    <div class="form-group">
-        <label for="Category">Category</label>
-        <select class="form-control" id="Category" name="Category">
-            @foreach (var category in Model.Categories)
-            {
-                @if (category == Model.Product.Category)
-                {
-                    <option value="@category" selected="selected">@category</option>
-                }
-                else
-                {
-                    <option value="@category">@category</option>
-                }
-            }
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="Availability">Availability</label>
-        <select class="form-control" id="Availability" name="Availability">
-            @foreach (var availability in Model.Availabilities)
-            {
-                @if (availability == Model.Product.Availability)
-                {
-                    <option value="@availability" selected="selected">@availability</option>
-                }
-                else
-                {
-                    <option value="@availability">@availability</option>
-                }
-            }
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="Description">Description</label>
-        <textarea class="form-control" id="Description" name="Description">@Model.Product.Description</textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Save Changes</button>
-</form>
+        <div class="kc-card">
+            <div class="kc-cardbody">
+                <form method="post" class="kc-form">
+                    <input type="hidden" name="ID" value="@Model.Product.ID" />
 
-<a asp-page="/ProductInfo/Products">Back to List</a>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="Name" name="Name" value="@Model.Product.Name" placeholder="e.g. African Salad Bowl" />
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="Price" class="form-label">Price</label>
+                            <div class="input-group">
+                                <span class="input-group-text">R</span>
+                                <input type="text" class="form-control" id="Price" name="Price" value="@Model.Product.Price" placeholder="0.00" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="Category" class="form-label">Category</label>
+                            <select class="form-select" id="Category" name="Category">
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <option value="@category" selected="@(category == Model.Product.Category)">
+                                        @category
+                                    </option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="Availability" class="form-label">Availability</label>
+                            <select class="form-select" id="Availability" name="Availability">
+                                @foreach (var availability in Model.Availabilities)
+                                {
+                                    <option value="@availability" selected="@(availability == Model.Product.Availability)">
+                                        @availability
+                                    </option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="Description" class="form-label">Description</label>
+                            <textarea class="form-control" id="Description" name="Description" rows="4"
+                                      placeholder="Short product description...">@Model.Product.Description</textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="kc-form-actions">
+                                <button type="submit" class="btn kc-btn kc-btn-primary">
+                                    <i class="fas fa-save me-2"></i> Save Changes
+                                </button>
+
+                                <a class="btn kc-btn kc-btn-outline" asp-page="/ProductInfo/Products">
+                                    Cancel
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</section>

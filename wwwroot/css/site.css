@@ -949,3 +949,149 @@ body.kc-sticky {
         box-shadow: 0 10px 24px rgba(15, 23, 42, 0.35);
         color: #ffffff;
     }
+
+/* =========================
+   ADMIN FORMS (Create/Edit Product)
+========================= */
+
+.admin-page .kc-formcard {
+    padding: 22px;
+}
+
+.admin-page .kc-form {
+    width: 100%;
+}
+
+.admin-page .kc-label {
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.admin-page .kc-input {
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    padding: 12px 14px;
+    box-shadow: none;
+}
+
+    .admin-page .kc-input:focus {
+        border-color: rgba(37, 99, 235, 0.55);
+        box-shadow: 0 0 0 0.25rem rgba(37, 99, 235, 0.15);
+    }
+
+.admin-page .kc-inputprefix {
+    border-radius: 14px 0 0 14px;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+    font-weight: 800;
+    color: #334155;
+}
+
+.admin-page .kc-formactions {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Edit/Create form polish (admin only) */
+.admin-page .kc-cardbody {
+    padding: 22px;
+}
+
+.admin-page .kc-form .form-label {
+    font-weight: 700;
+    color: #334155;
+}
+
+.admin-page .kc-form .form-control,
+.admin-page .kc-form .form-select,
+.admin-page .kc-form .input-group-text {
+    border-radius: 14px;
+    border-color: #e2e8f0;
+}
+
+.admin-page .kc-form .input-group .form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.admin-page .kc-form .input-group-text {
+    background: #f8fafc;
+    color: #475569;
+    border-right: 0;
+}
+
+.admin-page .kc-form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+
+/* =========================================
+   ADMIN PAGE BUTTON FIXES (VISIBLE ON LIGHT BG)
+   Only affects pages with <body class="admin-page">
+========================================= */
+
+.admin-page .kc-actions .kc-btn,
+.admin-page .kc-card .kc-btn {
+    border-radius: 14px;
+    font-weight: 800;
+}
+
+/* Outline button (was white-on-white) */
+.admin-page .kc-btn-outline {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important; /* slate-300 */
+    color: #0f172a !important; /* slate-900 */
+    box-shadow: 0 10px 25px rgba(2, 6, 23, 0.06);
+}
+
+    .admin-page .kc-btn-outline:hover {
+        background: #f8fafc !important; /* slate-50 */
+        border-color: #94a3b8 !important; /* slate-400 */
+        color: #0f172a !important;
+        transform: translateY(-1px);
+    }
+
+/* Secondary button (View Orders) – make it clearly visible */
+.admin-page .kc-btn-secondary {
+    background: #0f172a !important; /* dark */
+    border: 1px solid #0f172a !important;
+    color: #ffffff !important;
+    box-shadow: 0 12px 28px rgba(2, 6, 23, 0.20);
+}
+
+    .admin-page .kc-btn-secondary:hover {
+        background: #111827 !important;
+        border-color: #111827 !important;
+        color: #ffffff !important;
+        transform: translateY(-1px);
+    }
+
+/* Small buttons in table */
+.admin-page .kc-btn-sm {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+}
+
+.admin-page .kc-btn-danger {
+    background: #fee2e2 !important; /* red-100 */
+    border: 1px solid #fecaca !important; /* red-200 */
+    color: #991b1b !important; /* red-800 */
+}
+
+    .admin-page .kc-btn-danger:hover {
+        background: #fecaca !important; /* red-200 */
+        border-color: #fca5a5 !important; /* red-300 */
+        color: #7f1d1d !important; /* red-900 */
+    }
+
+/* Icons inside buttons should follow text color */
+.admin-page .kc-btn i {
+    color: inherit !important;
+}

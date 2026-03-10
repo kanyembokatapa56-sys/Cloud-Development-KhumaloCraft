@@ -8,7 +8,7 @@ namespace KhumaloCraftEmporium_ST10265272.Pages.OrderBackEnd
     {
         public List<OrderHistoryItem> OrderHistoryItems { get; set; } = new List<OrderHistoryItem>();
 
-        private readonly string connectionString = "Server=tcp:superserver9000.database.windows.net,1433;Initial Catalog=KHUMALO_STORE_INFO;Persist Security Info=False;User ID=superserver9000_admin;Password=@OddJobs2003;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private readonly string connectionString = "Server=DESKTOP-31QPGQF\\SQLEXPRESS01;Database=KhumaloCraft_DB;Integrated Security=True;TrustServerCertificate=True;";
 
         public void OnGet()
         {

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KhumaloCraftEmporium_ST10265272")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0dcfd0d7bec3b2cd0b7d1486db9fe05b8c76b22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbf66232ba7e1cac34c043e4d94cab8097188bb8")]
 [assembly: System.Reflection.AssemblyProductAttribute("KhumaloCraftEmporium_ST10265272")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KhumaloCraftEmporium_ST10265272")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

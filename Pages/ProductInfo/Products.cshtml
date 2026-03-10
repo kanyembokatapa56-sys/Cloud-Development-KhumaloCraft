@@ -5,7 +5,6 @@
     ViewData["BodyClass"] = "admin-page";
 }
 
-
 <section class="kc-section">
     <div class="container">
         <div class="kc-pagebar">
@@ -18,6 +17,7 @@
                 <a class="btn kc-btn kc-btn-primary" href="/ProductInfo/CreateProduct">
                     <i class="fas fa-plus me-2"></i> New Product
                 </a>
+
                 <a class="btn kc-btn kc-btn-secondary" href="/OrderBackEnd/OrderStatus">
                     <i class="fas fa-receipt me-2"></i> View Orders
                 </a>
@@ -56,25 +56,37 @@
                         {
                             <tr>
                                 <td class="kc-id">@products.ID</td>
+
                                 <td class="kc-strong">@products.Name</td>
+
                                 <td class="kc-desc">@products.Description</td>
+
                                 <td>
                                     <span class="kc-pill">@products.Category</span>
                                 </td>
+
                                 <td>
                                     <span class="kc-status @(products.Availability?.ToLower().Contains("in") == true ? "is-in" : "is-out")">
                                         @products.Availability
                                     </span>
                                 </td>
+
                                 <td class="kc-price">R @products.Price</td>
+
                                 <td class="kc-date">@products.CreatedOn</td>
+
                                 <td class="text-end">
-                                    <a class="btn kc-btn kc-btn-outline kc-btn-sm" href="/ProductInfo/EditProduct?id=@products.ID">
-                                        <i class="fas fa-pen me-1"></i> Edit
-                                    </a>
-                                    <a class="btn kc-btn kc-btn-danger kc-btn-sm" href="/ProductInfo/DeleteProduct?id=@products.ID">
-                                        <i class="fas fa-trash me-1"></i> Delete
-                                    </a>
+                                    <div class="kc-actionstack">
+                                        <a class="btn kc-btn kc-btn-outline kc-btn-sm"
+                                           href="/ProductInfo/EditProduct?id=@products.ID">
+                                            <i class="fas fa-pen me-1"></i> Edit
+                                        </a>
+
+                                        <a class="btn kc-btn kc-btn-danger kc-btn-sm"
+                                           href="/ProductInfo/DeleteProduct?id=@products.ID">
+                                            <i class="fas fa-trash me-1"></i> Delete
+                                        </a>
+                                    </div>
                                 </td>
                             </tr>
                         }
