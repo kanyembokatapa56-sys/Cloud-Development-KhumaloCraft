@@ -12,7 +12,6 @@ This project was built to demonstrate full-stack development using Microsoft tec
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/242bba8d91710b76b0fb01845471400bfb5413de/My%20Work%201.png)
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/fb42d58c9219d3f281581f8abead86f18fbea213/My%20Work%202.png)
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/43d155c8c7745a450fdb2a236e82c37d2efc947c/My%20Work%203.png)
-![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/603b61400c203a895f63e6f03f1669736d22d125/Edit.png)
 
 **Project Overview**
 
@@ -33,7 +32,7 @@ The system allows administrators to:
 
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/4e45b95d89581d6ce9db19c8d7b6e42cc30b3939/Product%20Backend.png)
 ![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/dbb97beaeb497ad7642e763c3fda8758a83ebf7b/Add%20Product.png)
-
+![image alt](https://github.com/kanyembokatapa56-sys/Cloud-Development-KhumaloCraft/blob/603b61400c203a895f63e6f03f1669736d22d125/Edit.png)
 
 The goal of the project was to implement real-world CRUD operations, integrate a relational database, and build a clean and responsive admin interface.
 
